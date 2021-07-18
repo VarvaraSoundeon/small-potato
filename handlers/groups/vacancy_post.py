@@ -10,4 +10,4 @@ from loader import dp
 @dp.message_handler(text_contains='#работа')
 @dp.message_handler(text_contains='#вакансия')
 async def text_contains_vacancy_tag(message: types.Message):
-    await message.reply("Привет!, {message.from_user.full_name}!\nХотите запостить вакансию\nв чате 39 лицея СПБ?", reply_markup=const_link_menu('линк на юмани',config.UMONEY))
+    await message.reply("Привет!, чтобы запостить у лицея 239\n - сделайте перевод 100р", reply_markup=const_link_menu('Кошелек юмани',config.UMONEY))
