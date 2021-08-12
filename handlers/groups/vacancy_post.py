@@ -10,10 +10,7 @@ from loader import dp
 @dp.message_handler(text_contains='#работа')
 @dp.message_handler(text_contains='#вакансия')
 async def text_contains_vacancy_tag(message: types.Message):
-    buttons = [
-    const_link_menu('Кошелек юмани',config.UMONEY),
-     const_link_menu('Биткоин',config.BITCOIN)
-    ]
-    keyboard = types.InlineKeyboardMarkup(row_width=1)
-    keyboard.add(*buttons)
+    keyboard = const_link_menu('Кошелек юмани',config.UMONEY)
+    keyboard.add(types.InlineKeyboardButton('BITCOIN',config.BITCOINQR))
+    
     await message.reply("Привет!, чтобы запостить у лицея 239\n - сделайте перевод 100р",  reply_markup=keyboard)

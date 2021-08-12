@@ -10,4 +10,5 @@ IP = env.str("ip")  # Тоже str, но для айпи адреса хоста
 LIT_CHAT = env.str("LIT_CHAT")
 LOG_CHAT = env.str("LOG_CHAT")
 UMONEY = env.str("UMONEY")
+BITCOINQR = env.str("BITCOINQR")
 BITCOIN = env.str("BITCOIN")

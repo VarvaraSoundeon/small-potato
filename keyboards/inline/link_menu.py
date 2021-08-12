@@ -8,7 +8,7 @@ def const_link_menu(url_text,url_link):
     # kept for clearness
     keyboard_markup.add(
         # url buttons have no callback data
-        types.InlineKeyboardButton(url_text, url=url_link),
+        types.InlineKeyboardButton(url_text, url=url_link)
     )
     
     #callback-button
